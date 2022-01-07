@@ -2,8 +2,9 @@ package jm.task.core.jdbc.model;
 
 import javax.persistence.*;
 import java.util.Objects;
-
+@Entity
 @Table(name = "TABLE")
+
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,6 +18,7 @@ public class User {
     private String lastName;
 
     @Column(name="AGE")
+
     private Byte age;
 
     public User() {
